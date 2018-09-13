@@ -1,0 +1,27 @@
+<!doctype html>
+
+<head>
+  <title>explorations</title>
+
+
+  <style>
+  body {
+    font-family: arial;
+  }
+
+  </style>
+</head>
+
+<body>
+  <h1>First Exploration</h1>
+
+
+
+
+<br />
+  <h3>Click <a href="index.html">here</a> to go home.</h3>
+
+</body>
+
+
+</html>
