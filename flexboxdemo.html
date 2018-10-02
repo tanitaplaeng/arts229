@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://chad-bennett.github.io/arts229/demo-flexbox/flexbox.html -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>flexbox demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: arial;
+      margin: 50px;
+    }
+
+    section {
+      background: lightblue;
+      display: flex;
+      margin: 10px;
+    }
+
+    div {
+      width: 100px;
+      height: 100px;
+    }
+
+    .flex-container1 {
+      padding: 50px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: space-around;
+    }
+
+    .flex-container1 div {
+      background: darkseagreen;
+      flex-basis: auto;
+      padding: 15px;
+      border-radius: 2rem;
+      box-shadow: 3px 3px 5px #666;
+    }
+
+    .order1 {
+      order: -1;
+      flex-grow: 3;
+    }
+
+    .flex-container2 {
+      background: lightgray;
+      padding: 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .flex-container2 div {
+      flex-basis: auto;
+      background: white;
+    }
+
+    .order2 {
+      order: 2;
+    }
+
+    .order3 {
+      order: -3;
+    }
+
+    .flex-container3 {
+      background: white;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 800px;
+    }
+
+    .flex-container3 div {
+      background: pink;
+      padding: 30px;
+      border-radius: 5rem;
+      text-align: center;
+    }
+
+    .flex-container4 {
+      background: white;
+      height: 200px;
+      padding: 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .flex-container4 div {
+      background: #C8D5CA;
+      align-items: baseline;
+      width: 170px;
+    }
+
+    .fc41 {
+      height: 30px;
+      align-self: flex-end;
+    }
+
+    .fc42 {
+      height: 125px;
+    }
+
+    .fc43 {
+      height: 75px;
+      align-self: flex-end;
+    }
+
+    .fc44 {
+      height: 125px;
+      align-self: flex-end;
+    }
+
+    .fc45 {
+      height: 50px;
+    }
+
+    .fc46 {
+      height: 150px;
+    }
+
+    .flex-container5 {
+      background: white;
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    .article {
+      flex: 100%;
+      background: #F4DCA4;
+      padding: 2em;
+      box-sizing: border-box;
+      height: 50vh;
+    }
+
+    .sidebar {
+      flex: 100%;
+      background: #D1B180;
+      padding: 2em;
+      box-sizing: border-box;
+      margin-top: 1%;
+      height: 50vh;
+    }
+
+    .footer {
+      flex: 100%;
+      background: #F4DCA4;
+      padding-top: 0.5em;
+      padding-left: 2em;
+      height: 10vh;
+      box-sizing: border-box;
+      margin-top: 1%;
+      margin-bottom: 2%;
+    }
+
+    @media screen and (min-width: 1000px) {
+      .article {
+        flex: 69%;
+        margin-right: 1%;
+      }
+
+      .sidebar {
+        flex: 30%;
+        margin-top: 0;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>flexbox experiment</h1>
+  </header>
+
+  <section class="flex-container1">
+    <div>1</div>
+    <div class="order1">2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </section>
+
+  <section class="flex-container2">
+    <div class=order2>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div class="order3">8</div>
+  </section>
+
+  <section class="flex-container3">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </section>
+
+  <section class="flex-container4">
+    <div class="fc41">1</div>
+    <div class="fc42">2</div>
+    <div class="fc43">3</div>
+    <div class="fc44">4</div>
+    <div class="fc45">5</div>
+    <div class="fc46">6</div>
+  </section>
+  <br /><br />
+  <section class="flex-container5">
+
+
+    <div class="article">
+
+      <h2>Higher in Fiber and Good For Your Heart</h2>
+      <p>
+        Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+      </p>
+      <p>
+        Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+      </p>
+
+      <p>
+        Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus
+        root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth
+        salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.
+      </p>
+      <p>
+        Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean
+        earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.
+      </p>
+      <p>
+        Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.
+
+      </p>
+
+
+    </div>
+
+
+    <div class="sidebar">
+      <h2>Potato Time</h2>
+      <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage. Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut. Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic. Jícama garlic courgette coriander radicchio. </p>
+<center>
+  <img src="https://images.pexels.com/photos/51157/potatoes-vegetables-field-eat-51157.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350" alt="potato" title="image" height="auto" width="275vh">
+</center>
+
+    </div>
+
+
+
+    <div class="footer">
+      <h2>Veggie Bonus</h2>
+      <p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean.</p>
+    </div>
+
+
+  </section>
+
+
+
+
+</body>
+
+</html>
