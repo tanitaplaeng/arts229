@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>second exploration</title>
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+  <style>
+
+  :root {
+  --mainColor: #ff9800;
+}
+
+    body {
+      background: #0E0F11;
+      font-family: 'Shrikhand', cursive;
+      font-size: 3em;
+      height: 25vh;
+      margin: 10%;
+      color: #ffffff;
+      align-items: center;
+      display: grid;
+      overflow: hidden;
+    }
+
+    p {
+    grid-column: 2
+  }
+
+  a {
+    color: var(--mainColor);
+    text-decoration: none;
+  }
+
+  a::before {
+    content: '';
+    background-image: url('https://cdn.stocksnap.io/img-thumbs/960w/HU9INC26UX.jpg');
+    background-position: 0% 30%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    position: absolute;
+    bottom: 0vh;
+    width: 100vw;
+    transform: translateY(100%);
+    transition: transform .3s;
+  }
+
+  a:hover::before {
+    transform: translateY(0px);
+  }
+
+  @media screen and (min-width: 800px) {
+    body {
+      grid-template-columns: 400px 4fr 1em;
+    }
+
+    a::before {
+      background-position: 0;
+      background-size: 500px;
+      height: 400px;
+      transform: translateY(400px);
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    body {
+      grid-template-columns: 700px 4fr 30px;
+    }
+
+    a::before {
+      background-size: 600px;
+      height: 500px;
+      transform: translateY(500px);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    body {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  </style>
+</head>
+
+
+
+<body>
+  <p>
+    When you're <a href="https://cdn.stocksnap.io/img-thumbs/960w/HU9INC26UX.jpg"> feeling down</a>.
+  </p>
+
+
+</body>
+
+</html>
