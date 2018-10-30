@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Change Image on Hover in CSS</title>
+  <style type="text/css">
+    .home-plnts {
+      width: 80%; /* sets div width at percent of browser screen width */
+      height: 80vh; /* sets height at percent of browser screen height (vh=view height) */
+      background: url("images/home-plnts.jpg") no-repeat;
+      margin: 50px auto; /* auto margin horizontally centers image on screen */
+      background-size: cover; /* scales image to fit the div size */
+      background-position: center center; /* centers background images in div so that when the box changes size, the image remains in center. portions will get cut off on sides */
+    }
+
+    .home-plnts:hover {
+      background: url("images/home-plnts2.jpg") no-repeat;
+      background-size: cover; /* need this on hover state too */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="home-plnts"> </div>
+</body>
+
+</html>
