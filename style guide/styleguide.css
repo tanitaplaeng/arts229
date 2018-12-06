@@ -1,0 +1,57 @@
+    body {
+      background: black;
+      font-family: acumin-pro, sans-serif;
+      color: white;
+      margin-top: 100px;
+      margin-left: 50px;
+    }
+
+    header {
+      font-family: sabbath-black, serif;
+      font-size: 50px;
+      line-height: 50px;
+      color: white;
+    }
+
+    header a:link,
+    a:visited {
+      color: white;
+      text-decoration: none;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    nav {
+      margin-top: 25px;
+      line-height: 25px;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      font-size: 8px;
+      text-align: center;
+    }
+
+    footer a:link,
+    a:visited {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
