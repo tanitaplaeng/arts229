@@ -1,3 +1,17 @@
+body {
+  background: #f2f2f2;
+  text-align: center;
+}
+
+.box {
+  background: radial-gradient(#fdbb2d, #22c1c3);
+
+  color: white;
+  padding: 6rem 1rem;
+  margin: 4rem;
+  font-size: 100px;
+}
+
 .gallery-block{
 	padding-bottom: 60px;
 	padding-top: 60px;
