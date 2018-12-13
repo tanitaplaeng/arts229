@@ -83,19 +83,23 @@ nav {
   font-size: 18px;
 }
 
-footer {
-  padding-top: 50px;
-  background-color: black;
-  text-align: center;
-  font-size: 8px;
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   font-size: 8px;
+   text-align: center;
 }
 
-footer a:link,
+.footer a:link,
 a:visited {
   color: white;
   text-decoration: none;
 }
 
-footer a:hover {
+.footer a:hover {
   text-decoration: underline;
 }
